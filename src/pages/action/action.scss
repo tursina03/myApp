@@ -1,0 +1,41 @@
+
+page-action{
+    .action-sheets-basic-page {
+        .ion-md-share {
+        color: #ED4248;
+        }
+        .ion-md-arrow-dropright-circle {
+        color: #508AE4;
+        }
+        .ion-md-heart-outline {
+        color: #31D55F;
+        }
+        .action-sheet-cancel ion-icon,
+        .action-sheet-destructive ion-icon {
+        color: #757575;
+        }
+    }
+
+    .buttons-components-page {
+
+        ion-card {
+          margin-bottom: 2em;
+        }
+      
+        ion-card-content {
+          background-color: #F4F5F8;
+        }
+      
+        ion-card img {
+          width: auto;
+          height: 44px;
+          display: block;
+          margin: 20px auto;
+        }
+      
+      }
+
+      ion-card.cards-list-demo ion-card-header {
+        color: map-get($colors, primary);
+      }
+} 

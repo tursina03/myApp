@@ -1,0 +1,254 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Action Sheets</ion-title>
+    </ion-navbar>
+</ion-header>
+    
+<ion-content padding class="action-sheets-basic-page">
+    <p>
+        <button ion-button color="light" small>Alert</button>
+    </p>
+    <button ion-button block (click)="openMenu()">
+        Show Action Sheet
+    </button>
+
+    <button ion-button block color="custom" (click)="doAlert()">Basic Alert </button>
+    <button ion-button block color="custom" (click)="doPrompt()">Prompt Alert </button>
+    <button ion-button block color="custom" (click)="doConfirm()">Confirmation Alert </button>
+    <button ion-button block color="custom" (click)="doRadio()">Radio Alert </button>
+    <button ion-button block color="custom" (click)="doCheckbox()">Checkbox Alert </button>
+
+    <hr/>
+    <p>
+        <button ion-button color="light" small>Badges</button>
+    </p>
+
+    <ion-card>
+
+            <img src="assets/imgs/yellow_tulip_4106.jpg"/>
+        
+            <ion-card-content>
+                <ion-card-title>
+                Björk
+                </ion-card-title>
+                <p>
+                Björk first came to prominence as one of the lead vocalists of the avant pop Icelandic sextet the Sugarcubes, but when...
+                </p>
+            </ion-card-content>
+        
+            <ion-item>
+                <ion-icon name='musical-notes' item-start style="color: #d03e84"></ion-icon>
+                Albums
+                <ion-badge item-end>9</ion-badge>
+            </ion-item>
+        
+            <ion-item>
+                <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+                Followers
+                <ion-badge item-end>260k</ion-badge>
+            </ion-item>
+        
+        </ion-card>
+
+        <hr>
+        <p>
+            <button ion-button color="light" small>Button - Icon</button>
+        </p>
+
+        <p>
+                <button ion-button color="light" icon-start>
+                  <ion-icon name='arrow-back'></ion-icon>
+                  Back
+                </button>
+            
+                <button ion-button color="light" icon-only>
+                  <ion-icon name='arrow-down'></ion-icon>
+                </button>
+            
+                <button ion-button color="light" icon-only>
+                  <ion-icon name='arrow-up'></ion-icon>
+                </button>
+            
+                <button ion-button color="light" icon-end>
+                  Next
+                  <ion-icon name='arrow-forward'></ion-icon>
+                </button>
+              </p>
+            
+              <p>
+                <button ion-button icon-start>
+                  <ion-icon name='home'></ion-icon>
+                  Home
+                </button>
+                <button ion-button outline icon-start>
+                  <ion-icon name='briefcase' is-active="false"></ion-icon>
+                  Work
+                </button>
+                <button ion-button clear icon-start>
+                  <ion-icon name='beer' is-active="false"></ion-icon>
+                  Pub
+                </button>
+              </p>
+            
+              <p>
+                <button ion-button color="secondary" icon-start>
+                  <ion-icon name='people'></ion-icon>
+                  Friends
+                </button>
+                <button ion-button color="secondary" outline icon-start>
+                  <ion-icon name='paw' is-active="false"></ion-icon>
+                  Best Friend
+                </button>
+              </p>
+            
+              <p>
+                <button ion-button color="danger" icon-start>
+                  <ion-icon name='close'></ion-icon>
+                  Remove
+                </button>
+                <button ion-button color="danger" outline icon-only>
+                  <ion-icon name='remove-circle' is-active="false"></ion-icon>
+                </button>
+                <button ion-button color="danger" clear icon-only>
+                  <ion-icon name='trash' is-active="false"></ion-icon>
+                </button>
+              </p>
+            
+              <p>
+                <button ion-button color="dark" round icon-start>
+                  <ion-icon name='construct' is-active="false"></ion-icon>
+                  Tools
+                </button>
+                <button ion-button color="dark" clear icon-only>
+                  <ion-icon name='hammer' is-active="false"></ion-icon>
+                </button>
+            </p>
+
+        <hr>
+        <p>
+            <button ion-button color="light" small>Buttons In Components</button>
+        </p>
+
+        <ion-card>
+                <ion-card-content>
+                  <img src="assets/imgs/kadraya.jpg" />
+                </ion-card-content>
+            
+                <ion-item>
+                  <button ion-button clear item-start>Like</button>
+                  <button ion-button clear item-end>Comment</button>
+                </ion-item>
+              </ion-card>
+            
+              <ion-list>
+                <ion-item>
+                  Inner Button
+                  <button ion-button item-end outline>Outline</button>
+                </ion-item>
+            
+                <ion-item>
+                  Left Icon Button
+                  <button ion-button item-end outline icon-start>
+                    <ion-icon name='star'></ion-icon>
+                    Left Icon
+                  </button>
+                </ion-item>
+            
+                <ion-item>
+                  Right Icon Button
+                  <button ion-button item-end outline icon-end>
+                    Right Icon
+                    <ion-icon name='star'></ion-icon>
+                  </button>
+                </ion-item>
+            </ion-list>
+
+            <hr>
+            <p>
+                <button ion-button color="light" small>Card List</button>
+            </p>
+
+            <ion-card class="cards-list-demo">
+                    <ion-card-header>
+                      Explore Nearby
+                    </ion-card-header>
+                
+                    <ion-list>
+                      <button ion-item>
+                        <ion-icon name='cart' item-start></ion-icon>
+                        Shopping
+                      </button>
+                
+                      <button ion-item>
+                        <ion-icon name='medical' item-start></ion-icon>
+                        Hospital
+                      </button>
+                
+                      <button ion-item>
+                        <ion-icon name='cafe' item-start></ion-icon>
+                        Cafe
+                      </button>
+                
+                      <button ion-item>
+                        <ion-icon name='paw' item-start></ion-icon>
+                        Dog Park
+                      </button>
+                
+                      <button ion-item>
+                        <ion-icon name='beer' item-start></ion-icon>
+                        Pub
+                      </button>
+                
+                      <button ion-item>
+                        <ion-icon name='planet' item-start></ion-icon>
+                        Space
+                      </button>
+                
+                    </ion-list>
+                </ion-card>
+
+                <hr>
+                <p>
+                    <button ion-button color="light" small>Images in Cards</button>
+                </p>
+
+                <ion-card>
+
+                    <img src="assets/img/nin-live.png"/>
+                
+                    <ion-card-content>
+                        <ion-card-title>
+                        Nine Inch Nails Live
+                        </ion-card-title>
+                        <p>
+                        The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+                        </p>
+                    </ion-card-content>
+                
+                    <ion-row no-padding>
+                        <ion-col>
+                        <button ion-button clear small color="danger" icon-start>
+                            <ion-icon name='star'></ion-icon>
+                            Favorite
+                        </button>
+                        </ion-col>
+                        <ion-col text-center>
+                        <button ion-button clear small color="danger" icon-start>
+                            <ion-icon name='musical-notes'></ion-icon>
+                            Listen
+                        </button>
+                        </ion-col>
+                        <ion-col text-right>
+                        <button ion-button clear small color="danger" icon-start>
+                            <ion-icon name='share-alt'></ion-icon>
+                            Share
+                        </button>
+                        </ion-col>
+                    </ion-row>
+                
+                    </ion-card>
+                    
+                    
+                      
+
+</ion-content>
