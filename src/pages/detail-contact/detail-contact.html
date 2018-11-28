@@ -16,6 +16,7 @@
 <ion-content padding>
   <!--<pre>{{user | json}}</pre>-->
 
+  
   <div class="list card">
     <div class="item">
       <h2>{{user.name.title}} {{user.name.first}} {{user.name.last}}</h2>
@@ -25,4 +26,38 @@
       <img [src]="user.picture.thumbnail" alt="" />
     </div>
   </div>
+ 
+<!--
+  <ion-card>
+
+      <img [src]="user.picture.thumbnail"/>
+  
+      <ion-card-content>
+          <ion-card-title>
+              {{user.name.last}}
+          </ion-card-title>
+          <p>
+              {{user.name.title}} {{user.name.first}} {{user.name.last}}
+          </p>
+      </ion-card-content>
+  
+      <ion-item>
+          <ion-icon name='heart' item-start style="color: #d03e84"></ion-icon>
+          Email
+          <ion-badge item-end>{{user.email}}</ion-badge>
+      </ion-item>
+  
+      <ion-item>
+          <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
+          Address
+          <ion-badge item-end>
+            {{user.location.street}} <br/>
+            {{user.location.city}}<br/>
+            {{user.location.state}}<br/>
+            {{user.location.postcode}}
+          </ion-badge>
+      </ion-item>
+  
+  </ion-card>
+ -->
 </ion-content>
